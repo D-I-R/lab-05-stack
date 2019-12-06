@@ -1,7 +1,6 @@
 os: linux
 sudo: required
-language:
-- minimal
+language: "minimal"
 services:
 - docker
 
@@ -12,13 +11,10 @@ jobs:
     - docker run -v `pwd`:`pwd` -w `pwd` --cap-add=SYS_PTRACE -t rusdevops/bootstrap-cpp scripts/checks.sh
   - name: "tests"
     script:
-    - docker run -v `pwd`:`pwd` -w `pwd` -t rusdevops/bootstrap-cpp scripts/tests.sh
-  - name: "quality"
+      - docker run -v `pwd`:`pwd` -w `pwd` -t rusdevops/bootstrap-cpp scripts/tests.sh
+  - name: "coverage"
     script:
-    - ./scripts/genenv.sh
-    - docker run --env-file .env -v `pwd`:`pwd` -w `pwd` -t rusdevops/bootstrap-cpp scripts/coverage.sh
-    # The bot has gone...
-    # - docker run --env-file .env -v `pwd`:`pwd` -w `pwd` -t rusdevops/bootstrap-cpp scripts/duplication.sh
+      - docker run -v `pwd`:`pwd` -w `pwd` -t rusdevops/bootstrap-cpp scripts/coverage.sh
 
 notifications:
     email: false
