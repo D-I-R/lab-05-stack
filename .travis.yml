@@ -18,7 +18,3 @@ jobs:
 
 notifications:
     email: false
-
-branches:
-  except:
-  - master
