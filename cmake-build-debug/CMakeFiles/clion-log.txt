@@ -1,0 +1,9 @@
+/opt/clion-2019.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/cezar/CERZAR/workspace/labs/lab-05-stack
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /home/cezar/.hunter
+-- [hunter] [ Hunter-ID: e14bc15 | Toolchain-ID: 70e2fd0 | Config-ID: 2cb8efb ]
+-- [hunter] GTEST_ROOT: /home/cezar/.hunter/_Base/e14bc15/70e2fd0/2cb8efb/Install (ver.: 1.8.0-hunter-p11)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/cezar/CERZAR/workspace/labs/lab-05-stack/cmake-build-debug

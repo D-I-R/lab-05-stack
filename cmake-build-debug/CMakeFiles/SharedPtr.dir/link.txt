@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSharedPtrd.a  CMakeFiles/SharedPtr.dir/sources/Stack.cpp.o
+/usr/bin/ranlib libSharedPtrd.a

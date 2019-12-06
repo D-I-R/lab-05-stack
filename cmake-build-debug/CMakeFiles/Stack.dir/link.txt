@@ -1,0 +1,2 @@
+/usr/bin/ar qc libStackd.a  CMakeFiles/Stack.dir/sources/Stack.cpp.o CMakeFiles/Stack.dir/sources/Stack_for_NoCopy.cpp.o
+/usr/bin/ranlib libStackd.a
